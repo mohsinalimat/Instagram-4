@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		22057EC824E0AEAA7FE5CCEE /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761EFC9726C52FE28E1E0CE /* Pods_Makestagram.framework */; };
 		FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28491F0D724500474E86 /* AppDelegate.swift */; };
-		FFBD284C1F0D724500474E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD284B1F0D724500474E86 /* ViewController.swift */; };
-		FFBD284F1F0D724500474E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD284D1F0D724500474E86 /* Main.storyboard */; };
 		FFBD28511F0D724500474E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28501F0D724500474E86 /* Assets.xcassets */; };
-		FFBD28541F0D724500474E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28521F0D724500474E86 /* LaunchScreen.storyboard */; };
+		FFBD287B1F0DB78700474E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */; };
+		FFBD287C1F0DB78700474E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287A1F0DB78700474E86 /* Main.storyboard */; };
+		FFBD287F1F0DB7A100474E86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */; };
+		FFBD28801F0DB7A100474E86 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287E1F0DB7A100474E86 /* Info.plist */; };
+		FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28811F0DB7AA00474E86 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +23,13 @@
 		553A79115BF215499CD45C5D /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FFBD28461F0D724500474E86 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBD28491F0D724500474E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFBD284B1F0D724500474E86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFBD284E1F0D724500474E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBD28501F0D724500474E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFBD28531F0D724500474E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBD28551F0D724500474E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFBD287A1F0DB78700474E86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFBD287E1F0DB7A100474E86 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		FFBD28811F0DB7AA00474E86 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +83,12 @@
 			isa = PBXGroup;
 			children = (
 				FFBD28491F0D724500474E86 /* AppDelegate.swift */,
-				FFBD284B1F0D724500474E86 /* ViewController.swift */,
-				FFBD284D1F0D724500474E86 /* Main.storyboard */,
+				FFBD28811F0DB7AA00474E86 /* ViewController.swift */,
+				FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */,
+				FFBD287E1F0DB7A100474E86 /* Info.plist */,
+				FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */,
+				FFBD287A1F0DB78700474E86 /* Main.storyboard */,
 				FFBD28501F0D724500474E86 /* Assets.xcassets */,
-				FFBD28521F0D724500474E86 /* LaunchScreen.storyboard */,
 				FFBD28551F0D724500474E86 /* Info.plist */,
 			);
 			path = Makestagram;
@@ -150,9 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBD28541F0D724500474E86 /* LaunchScreen.storyboard in Resources */,
+				FFBD287C1F0DB78700474E86 /* Main.storyboard in Resources */,
+				FFBD287F1F0DB7A100474E86 /* GoogleService-Info.plist in Resources */,
 				FFBD28511F0D724500474E86 /* Assets.xcassets in Resources */,
-				FFBD284F1F0D724500474E86 /* Main.storyboard in Resources */,
+				FFBD28801F0DB7A100474E86 /* Info.plist in Resources */,
+				FFBD287B1F0DB78700474E86 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,31 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFBD284C1F0D724500474E86 /* ViewController.swift in Sources */,
+				FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */,
 				FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FFBD284D1F0D724500474E86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFBD284E1F0D724500474E86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FFBD28521F0D724500474E86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFBD28531F0D724500474E86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FFBD28561F0D724500474E86 /* Debug */ = {
@@ -376,6 +365,7 @@
 				FFBD285A1F0D724500474E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
