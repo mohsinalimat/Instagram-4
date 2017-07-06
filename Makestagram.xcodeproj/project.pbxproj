@@ -13,8 +13,9 @@
 		FFBD287B1F0DB78700474E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */; };
 		FFBD287C1F0DB78700474E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287A1F0DB78700474E86 /* Main.storyboard */; };
 		FFBD287F1F0DB7A100474E86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */; };
-		FFBD28801F0DB7A100474E86 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFBD287E1F0DB7A100474E86 /* Info.plist */; };
 		FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28811F0DB7AA00474E86 /* ViewController.swift */; };
+		FFBD28871F0E721C00474E86 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28861F0E721C00474E86 /* Login.storyboard */; };
+		FFBD28891F0E731E00474E86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28881F0E731E00474E86 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +25,13 @@
 		FFBD28461F0D724500474E86 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBD28491F0D724500474E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBD28501F0D724500474E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FFBD28551F0D724500474E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFBD287A1F0DB78700474E86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FFBD287E1F0DB7A100474E86 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
 		FFBD28811F0DB7AA00474E86 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		FFBD28861F0E721C00474E86 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		FFBD28881F0E731E00474E86 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +85,40 @@
 			isa = PBXGroup;
 			children = (
 				FFBD28491F0D724500474E86 /* AppDelegate.swift */,
-				FFBD28811F0DB7AA00474E86 /* ViewController.swift */,
+				FFBD28851F0E6FC800474E86 /* View Controllers */,
+				FFBD28831F0E6FA300474E86 /* Supporting Files */,
+				FFBD28841F0E6FB500474E86 /* Storyboards */,
+				FFBD28501F0D724500474E86 /* Assets.xcassets */,
+			);
+			path = Makestagram;
+			sourceTree = "<group>";
+		};
+		FFBD28831F0E6FA300474E86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				FFBD287D1F0DB7A100474E86 /* GoogleService-Info.plist */,
 				FFBD287E1F0DB7A100474E86 /* Info.plist */,
 				FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */,
-				FFBD287A1F0DB78700474E86 /* Main.storyboard */,
-				FFBD28501F0D724500474E86 /* Assets.xcassets */,
-				FFBD28551F0D724500474E86 /* Info.plist */,
 			);
-			path = Makestagram;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFBD28841F0E6FB500474E86 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD287A1F0DB78700474E86 /* Main.storyboard */,
+				FFBD28861F0E721C00474E86 /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFBD28851F0E6FC800474E86 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD28811F0DB7AA00474E86 /* ViewController.swift */,
+				FFBD28881F0E731E00474E86 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +186,7 @@
 				FFBD287C1F0DB78700474E86 /* Main.storyboard in Resources */,
 				FFBD287F1F0DB7A100474E86 /* GoogleService-Info.plist in Resources */,
 				FFBD28511F0D724500474E86 /* Assets.xcassets in Resources */,
-				FFBD28801F0DB7A100474E86 /* Info.plist in Resources */,
+				FFBD28871F0E721C00474E86 /* Login.storyboard in Resources */,
 				FFBD287B1F0DB78700474E86 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBD28891F0E731E00474E86 /* LoginViewController.swift in Sources */,
 				FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */,
 				FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */,
 			);
@@ -325,7 +353,7 @@
 			baseConfigurationReference = 553A79115BF215499CD45C5D /* Pods-Makestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JSuzuki.Makestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +366,7 @@
 			baseConfigurationReference = 446F5C7095A40F198A919268 /* Pods-Makestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Makestagram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JSuzuki.Makestagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
