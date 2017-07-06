@@ -16,6 +16,7 @@
 		FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28811F0DB7AA00474E86 /* ViewController.swift */; };
 		FFBD28871F0E721C00474E86 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28861F0E721C00474E86 /* Login.storyboard */; };
 		FFBD28891F0E731E00474E86 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28881F0E731E00474E86 /* LoginViewController.swift */; };
+		FFBD28901F0EBA9A00474E86 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD288F1F0EBA9A00474E86 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FFBD28811F0DB7AA00474E86 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		FFBD28861F0E721C00474E86 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		FFBD28881F0E731E00474E86 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		FFBD288F1F0EBA9A00474E86 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBD28491F0D724500474E86 /* AppDelegate.swift */,
+				FFBD288E1F0EBA8C00474E86 /* Models */,
 				FFBD28851F0E6FC800474E86 /* View Controllers */,
 				FFBD28831F0E6FA300474E86 /* Supporting Files */,
 				FFBD28841F0E6FB500474E86 /* Storyboards */,
@@ -119,6 +122,14 @@
 				FFBD28881F0E731E00474E86 /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFBD288E1F0EBA8C00474E86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFBD288F1F0EBA9A00474E86 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFBD28901F0EBA9A00474E86 /* User.swift in Sources */,
 				FFBD28891F0E731E00474E86 /* LoginViewController.swift in Sources */,
 				FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */,
 				FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */,
