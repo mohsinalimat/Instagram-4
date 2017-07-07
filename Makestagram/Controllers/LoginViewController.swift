@@ -43,6 +43,7 @@ extension LoginViewController: FUIAuthDelegate {
         if let error = error {
             assertionFailure("Error signing in: \(error.localizedDescription)")
         }
+        
         //1
         
         guard let user = user
@@ -52,9 +53,8 @@ extension LoginViewController: FUIAuthDelegate {
         let userRef = Database.database().reference().child("users").child(user.uid)
         // 3
         userRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            // 1
-            if let userDict = snapshot.value as? [String : Any] {
-                print("User already exists \(userDict.debugDescription).")
+            if let user = User(snapshot: snapshot) {
+                print("Welcome back, \(user.username).")
             } else {
                 print("New user!")
             }

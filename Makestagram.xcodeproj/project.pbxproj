@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22057EC824E0AEAA7FE5CCEE /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2761EFC9726C52FE28E1E0CE /* Pods_Makestagram.framework */; };
+		FF79C5E51F0F6C8C00C52781 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79C5E41F0F6C8C00C52781 /* CreateUsernameViewController.swift */; };
 		FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBD28491F0D724500474E86 /* AppDelegate.swift */; };
 		FFBD28511F0D724500474E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28501F0D724500474E86 /* Assets.xcassets */; };
 		FFBD287B1F0DB78700474E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBD28791F0DB78700474E86 /* LaunchScreen.storyboard */; };
@@ -23,6 +24,7 @@
 		2761EFC9726C52FE28E1E0CE /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		446F5C7095A40F198A919268 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		553A79115BF215499CD45C5D /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
+		FF79C5E41F0F6C8C00C52781 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		FFBD28461F0D724500474E86 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBD28491F0D724500474E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFBD28501F0D724500474E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				FFBD28811F0DB7AA00474E86 /* ViewController.swift */,
 				FFBD28881F0E731E00474E86 /* LoginViewController.swift */,
+				FF79C5E41F0F6C8C00C52781 /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				FFBD28901F0EBA9A00474E86 /* User.swift in Sources */,
 				FFBD28891F0E731E00474E86 /* LoginViewController.swift in Sources */,
 				FFBD28821F0DB7AA00474E86 /* ViewController.swift in Sources */,
+				FF79C5E51F0F6C8C00C52781 /* CreateUsernameViewController.swift in Sources */,
 				FFBD284A1F0D724500474E86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
