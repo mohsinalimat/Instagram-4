@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HaV-Xl-MhH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8G4-0K-9Oj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,16 +26,16 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="265"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="H0y-Qu-lag">
-                                        <rect key="frame" x="68" y="81" width="240" height="105"/>
+                                        <rect key="frame" x="68" y="81" width="240" height="104.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Makestagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y51-dB-oAr">
-                                                <rect key="frame" x="12" y="0.0" width="216" height="44"/>
+                                                <rect key="frame" x="12" y="0.0" width="216" height="43.5"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to see photos and videos from your friends." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="Urw-g8-Zvl">
-                                                <rect key="frame" x="0.0" y="69" width="240" height="36"/>
+                                                <rect key="frame" x="0.0" y="68.5" width="240" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -75,13 +75,15 @@
                             <constraint firstItem="0wZ-cr-ejO" firstAttribute="top" secondItem="0T9-cy-t3Q" secondAttribute="bottom" id="wxM-Cq-qal"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Lga-bF-rfw"/>
                     <connections>
                         <outlet property="loginButton" destination="RN8-Df-6Ye" id="59T-B3-waf"/>
+                        <segue destination="0ye-lt-tZT" kind="show" identifier="toCreateUsername" id="j6a-Ag-zE0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmY-zD-l2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="19"/>
+            <point key="canvasLocation" x="1210" y="18"/>
         </scene>
         <!--Create Username View Controller-->
         <scene sceneID="klX-6Q-4bP">
@@ -95,33 +97,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-92-Czb">
-                                <rect key="frame" x="21" y="101" width="333" height="198"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-92-Czb">
+                                <rect key="frame" x="21" y="101" width="333" height="197.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-rF-Zyb">
-                                        <rect key="frame" x="70" y="0.0" width="194" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Al-rF-Zyb">
+                                        <rect key="frame" x="69.5" y="0.0" width="194" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text=" Add a username so your friends can find you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-LI-8Jo">
-                                        <rect key="frame" x="1" y="50" width="332" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Add a username so your friends can find you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-LI-8Jo">
+                                        <rect key="frame" x="1" y="50" width="331.5" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-BG-MjG">
-                                        <rect key="frame" x="0.0" y="90" width="333" height="44"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-BG-MjG">
+                                        <rect key="frame" x="0.0" y="89.5" width="333" height="44"/>
                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Zmx-CQ-Oj4"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3t-Oj-GvF">
-                                        <rect key="frame" x="0.0" y="154" width="333" height="44"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3t-Oj-GvF">
+                                        <rect key="frame" x="0.0" y="153.5" width="333" height="44"/>
                                         <color key="backgroundColor" red="0.38039215686274508" green="0.6588235294117647" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="dSI-gw-Hc2"/>
@@ -143,8 +144,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5mt-92-Czb" firstAttribute="top" secondItem="u3i-jr-zeL" secondAttribute="bottom" constant="81" id="2QL-W5-pvX"/>
                             <constraint firstItem="5mt-92-Czb" firstAttribute="leading" secondItem="8hv-nb-2GK" secondAttribute="leadingMargin" constant="5" id="57k-My-G2r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5mt-92-Czb" secondAttribute="trailing" constant="5" id="UtJ-aQ-4os"/>
+                            <constraint firstItem="5mt-92-Czb" firstAttribute="leading" secondItem="8hv-nb-2GK" secondAttribute="leadingMargin" constant="5" id="lFd-ab-NRD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5mt-92-Czb" secondAttribute="trailing" constant="5" id="ppr-Ui-ptp"/>
                         </constraints>
                     </view>
                     <connections>
@@ -154,7 +158,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1M-UJ-gqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.5999999999999" y="18.440779610194905"/>
+            <point key="canvasLocation" x="2026" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SYo-Tp-Xx1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8G4-0K-9Oj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hec-5X-C9f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HaV-Xl-MhH" kind="relationship" relationship="rootViewController" id="yjO-7B-H0S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeF-fy-Qr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365.60000000000002" y="18.440779610194905"/>
         </scene>
     </scenes>
 </document>
