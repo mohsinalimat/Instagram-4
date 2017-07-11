@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Makestagram
 //
-//  Created by Joe Suzuki on 7/5/17.
+//  Created by Joe Suzuki on 7/10/17.
 //  Copyright © 2017 JoeSuzuki. All rights reserved.
 //
 
@@ -11,21 +11,25 @@ import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
-        // Override point for customization after application launch.
-        // 1
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-        // 2
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-            // 3
-            window?.rootViewController = initialViewController
-            // 4
+        FirebaseApp.configure() // access Firebase
+        
+        // 1 Create an instance of our Login storyboard that has LoginViewController set as its initial view controller
+        let storyboard = UIStoryboard(name: "Login",bundle: .main)
+        
+        // 2 Check if the storyboard has an initial view controller set
+        if let initalViewController = storyboard.instantiateInitialViewController() {
+            
+            // 3 If the storyboard's initial view controller exists, set it to the window's rootViewController property
+            window?.rootViewController = initalViewController
+            
+            //4 Position the window above any other existing windows
             window?.makeKeyAndVisible()
         }
+        
         return true
     }
 

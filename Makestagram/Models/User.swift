@@ -2,27 +2,27 @@
 //  User.swift
 //  Makestagram
 //
-//  Created by Joe Suzuki on 7/6/17.
+//  Created by Joe Suzuki on 7/11/17.
 //  Copyright © 2017 JoeSuzuki. All rights reserved.
 //
 
 import Foundation
-import FirebaseDatabase.FIRDataSnapshot
+import FirebaseDatabase.FIRDataSnapshot // imports for snapshots of our data
 
+// class for users
 class User {
-    
-    // MARK: - Properties
+    // MARK: -Properties
     
     let uid: String
     let username: String
     
-    // MARK: - Init
+    // MARK: -Init
     
-    init(uid: String, username: String) {
+    init(uid:String, username: String) {
         self.uid = uid
         self.username = username
     }
-    init?(snapshot: DataSnapshot) {
+    init?(snapshot: DataSnapshot){
         guard let dict = snapshot.value as? [String : Any],
             let username = dict["username"] as? String
             else { return nil }
@@ -30,4 +30,5 @@ class User {
         self.uid = snapshot.key
         self.username = username
     }
+    
 }

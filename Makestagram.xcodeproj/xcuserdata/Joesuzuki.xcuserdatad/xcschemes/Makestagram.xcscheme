@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FFBD28451F0D724500474E86"
+               BlueprintIdentifier = "FFDC644E1F13C1F700C7705C"
                BuildableName = "Makestagram.app"
                BlueprintName = "Makestagram"
                ReferencedContainer = "container:Makestagram.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFBD28451F0D724500474E86"
+            BlueprintIdentifier = "FFDC644E1F13C1F700C7705C"
             BuildableName = "Makestagram.app"
             BlueprintName = "Makestagram"
             ReferencedContainer = "container:Makestagram.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFBD28451F0D724500474E86"
+            BlueprintIdentifier = "FFDC644E1F13C1F700C7705C"
             BuildableName = "Makestagram.app"
             BlueprintName = "Makestagram"
             ReferencedContainer = "container:Makestagram.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FFBD28451F0D724500474E86"
+            BlueprintIdentifier = "FFDC644E1F13C1F700C7705C"
             BuildableName = "Makestagram.app"
             BlueprintName = "Makestagram"
             ReferencedContainer = "container:Makestagram.xcodeproj">
