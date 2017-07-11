@@ -47,22 +47,23 @@ extension LoginViewController: FUIAuthDelegate {
             assertionFailure("Error signing in: \(error.localizedDescription)")
         }
         
-        // 1 First we check that the FIRUser returned from authentication is not nil by unwrapping it. 
         guard let user = user
             else { return }
         
-        // 2 We construct a relative path to the reference of the user's information in our database.
-        let userRef = Database.database().reference().child("users").child(user.uid)
-        
-        // 3 We read from the path we created and pass an event closure to handle the data (snapshot) that is passed back from the database.
-        userRef.observeSingleEvent(of: .value, with: { (snapshot) in
-            //1 
-            if let user = User(snapshot: snapshot) {
-                print("Welcome back, \(user.username).")
+        UserService.show(forUID: user.uid) { (user) in
+            if let user = user {
+                // handle existing user
+                User.setCurrent(user)
+                
+                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
             } else {
-                print("New user!")
+                // handle new user
+                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
             }
-            // 4 retrieve user data from snapshot
-        })
+        }
     }
 }

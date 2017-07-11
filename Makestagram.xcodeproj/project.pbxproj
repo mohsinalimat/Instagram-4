@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		03D1642DBD3EEB6539A65F09 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */; };
-		FFC233C51F15148D00FBB8AF /* CreateUsernameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC233C41F15148D00FBB8AF /* CreateUsernameViewController.storyboard */; };
+		FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */; };
+		FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C91F15248900FBB8AF /* UserService.swift */; };
+		FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CB1F15444300FBB8AF /* Constants.swift */; };
 		FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC64521F13C1F700C7705C /* AppDelegate.swift */; };
 		FFDC645A1F13C1F700C7705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64591F13C1F700C7705C /* Assets.xcassets */; };
 		FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */; };
@@ -24,7 +26,9 @@
 		4D22FD7C4D26589B74440C34 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		990F63A39AA4CE61DEED5954 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FFC233C41F15148D00FBB8AF /* CreateUsernameViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateUsernameViewController.storyboard; sourceTree = "<group>"; };
+		FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		FFC233C91F15248900FBB8AF /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FFC233CB1F15444300FBB8AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFDC644F1F13C1F700C7705C /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDC64521F13C1F700C7705C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDC64591F13C1F700C7705C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +71,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FFC233C81F15245C00FBB8AF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FFC233C91F15248900FBB8AF /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		FFDC64461F13C1F700C7705C = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +100,10 @@
 		FFDC64511F13C1F700C7705C /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				FFC233C81F15245C00FBB8AF /* Services */,
 				FFDC64751F13C76800C7705C /* Supporting Files */,
 				FFDC64741F13C73A00C7705C /* Storyboards */,
+				FFDC64841F150C2100C7705C /* Models */,
 				FFDC64731F13C72500C7705C /* View Controllers */,
 				FFDC64521F13C1F700C7705C /* AppDelegate.swift */,
 				FFDC64591F13C1F700C7705C /* Assets.xcassets */,
@@ -101,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				FFDC647C1F13CB4400C7705C /* LoginViewController.swift */,
-				FFDC64841F150C2100C7705C /* Models */,
 				FFDC646C1F13C5A100C7705C /* ViewController.swift */,
+				FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -112,7 +126,6 @@
 			children = (
 				FFDC64781F13C9F500C7705C /* Login.storyboard */,
 				FFDC64691F13C5A100C7705C /* Main.storyboard */,
-				FFC233C41F15148D00FBB8AF /* CreateUsernameViewController.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 				FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */,
 				FFDC64821F14073E00C7705C /* GoogleService-Info.plist */,
 				FFDC646B1F13C5A100C7705C /* Info.plist */,
+				FFC233CB1F15444300FBB8AF /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -202,7 +216,6 @@
 				FFDC64831F14073E00C7705C /* GoogleService-Info.plist in Resources */,
 				FFDC64791F13C9F500C7705C /* Login.storyboard in Resources */,
 				FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */,
-				FFC233C51F15148D00FBB8AF /* CreateUsernameViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +276,10 @@
 			files = (
 				FFDC64861F150C3E00C7705C /* User.swift in Sources */,
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
+				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
 				FFDC64711F13C5A100C7705C /* ViewController.swift in Sources */,
+				FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */,
+				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
 				FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
