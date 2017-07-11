@@ -62,7 +62,7 @@ extension LoginViewController: FUIAuthDelegate {
                 }
             } else {
                 // handle new user
-                self.performSegue(withIdentifier: "toCreateUsername", sender: self)
+                self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
         }
     }

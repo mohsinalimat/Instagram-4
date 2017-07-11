@@ -11,6 +11,7 @@
 		FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */; };
 		FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C91F15248900FBB8AF /* UserService.swift */; };
 		FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CB1F15444300FBB8AF /* Constants.swift */; };
+		FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */; };
 		FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC64521F13C1F700C7705C /* AppDelegate.swift */; };
 		FFDC645A1F13C1F700C7705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64591F13C1F700C7705C /* Assets.xcassets */; };
 		FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		FFC233C91F15248900FBB8AF /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FFC233CB1F15444300FBB8AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		FFDC644F1F13C1F700C7705C /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDC64521F13C1F700C7705C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDC64591F13C1F700C7705C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FFC233CD1F155BC900FBB8AF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FFDC64461F13C1F700C7705C = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		FFDC64511F13C1F700C7705C /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				FFC233CD1F155BC900FBB8AF /* Extensions */,
 				FFC233C81F15245C00FBB8AF /* Services */,
 				FFDC64751F13C76800C7705C /* Supporting Files */,
 				FFDC64741F13C73A00C7705C /* Storyboards */,
@@ -277,6 +288,7 @@
 				FFDC64861F150C3E00C7705C /* User.swift in Sources */,
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
+				FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */,
 				FFDC64711F13C5A100C7705C /* ViewController.swift in Sources */,
 				FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */,
 				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
