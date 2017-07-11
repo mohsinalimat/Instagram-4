@@ -16,7 +16,6 @@
 		FFDC645A1F13C1F700C7705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64591F13C1F700C7705C /* Assets.xcassets */; };
 		FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */; };
 		FFDC646E1F13C5A100C7705C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64691F13C5A100C7705C /* Main.storyboard */; };
-		FFDC64711F13C5A100C7705C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC646C1F13C5A100C7705C /* ViewController.swift */; };
 		FFDC64791F13C9F500C7705C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64781F13C9F500C7705C /* Login.storyboard */; };
 		FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC647C1F13CB4400C7705C /* LoginViewController.swift */; };
 		FFDC64831F14073E00C7705C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64821F14073E00C7705C /* GoogleService-Info.plist */; };
@@ -37,7 +36,6 @@
 		FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFDC64691F13C5A100C7705C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		FFDC646B1F13C5A100C7705C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
-		FFDC646C1F13C5A100C7705C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		FFDC64781F13C9F500C7705C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		FFDC647C1F13CB4400C7705C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFDC64821F14073E00C7705C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				FFDC647C1F13CB4400C7705C /* LoginViewController.swift */,
-				FFDC646C1F13C5A100C7705C /* ViewController.swift */,
 				FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
@@ -289,7 +286,6 @@
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
 				FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */,
-				FFDC64711F13C5A100C7705C /* ViewController.swift in Sources */,
 				FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */,
 				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
 				FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */,

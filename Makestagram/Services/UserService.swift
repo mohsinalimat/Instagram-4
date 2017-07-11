@@ -6,6 +6,8 @@
 //  Copyright © 2017 JoeSuzuki. All rights reserved.
 //
 
+// communicates between backend & UI
+
 import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
