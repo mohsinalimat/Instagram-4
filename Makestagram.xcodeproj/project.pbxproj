@@ -12,6 +12,10 @@
 		FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C91F15248900FBB8AF /* UserService.swift */; };
 		FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CB1F15444300FBB8AF /* Constants.swift */; };
 		FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */; };
+		FFC233D11F1658E700FBB8AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233D01F1658E700FBB8AF /* HomeViewController.swift */; };
+		FFC233D31F1658F900FBB8AF /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233D21F1658F900FBB8AF /* FindFriendsViewController.swift */; };
+		FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233D41F1670C900FBB8AF /* MainTabBarController.swift */; };
+		FFC233D81F16741300FBB8AF /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233D71F16741300FBB8AF /* MGPhotoHelper.swift */; };
 		FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC64521F13C1F700C7705C /* AppDelegate.swift */; };
 		FFDC645A1F13C1F700C7705C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64591F13C1F700C7705C /* Assets.xcassets */; };
 		FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDC64681F13C5A100C7705C /* LaunchScreen.storyboard */; };
@@ -30,6 +34,10 @@
 		FFC233C91F15248900FBB8AF /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FFC233CB1F15444300FBB8AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		FFC233D01F1658E700FBB8AF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FFC233D21F1658F900FBB8AF /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		FFC233D41F1670C900FBB8AF /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		FFC233D71F16741300FBB8AF /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPhotoHelper.swift; sourceTree = "<group>"; };
 		FFDC644F1F13C1F700C7705C /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDC64521F13C1F700C7705C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFDC64591F13C1F700C7705C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +95,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		FFC233D61F1673DC00FBB8AF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FFC233D71F16741300FBB8AF /* MGPhotoHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FFDC64461F13C1F700C7705C = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,7 @@
 				FFDC64731F13C72500C7705C /* View Controllers */,
 				FFDC64521F13C1F700C7705C /* AppDelegate.swift */,
 				FFDC64591F13C1F700C7705C /* Assets.xcassets */,
+				FFC233D61F1673DC00FBB8AF /* Helpers */,
 			);
 			path = Makestagram;
 			sourceTree = "<group>";
@@ -125,6 +142,9 @@
 			children = (
 				FFDC647C1F13CB4400C7705C /* LoginViewController.swift */,
 				FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */,
+				FFC233D01F1658E700FBB8AF /* HomeViewController.swift */,
+				FFC233D21F1658F900FBB8AF /* FindFriendsViewController.swift */,
+				FFC233D41F1670C900FBB8AF /* MainTabBarController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -284,8 +304,12 @@
 			files = (
 				FFDC64861F150C3E00C7705C /* User.swift in Sources */,
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
+				FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
+				FFC233D11F1658E700FBB8AF /* HomeViewController.swift in Sources */,
+				FFC233D81F16741300FBB8AF /* MGPhotoHelper.swift in Sources */,
 				FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */,
+				FFC233D31F1658F900FBB8AF /* FindFriendsViewController.swift in Sources */,
 				FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */,
 				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
 				FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */,
