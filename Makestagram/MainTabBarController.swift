@@ -17,8 +17,8 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photoHelper.completionHandler = { image in // closure
-            print("handle image")
+        photoHelper.completionHandler = { image in
+            PostService.create(for: image)
         }
         // 1 First we set the MainTabBarController as the delegate of its tab bar
         delegate = self

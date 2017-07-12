@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		03D1642DBD3EEB6539A65F09 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */; };
+		FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC761F16914E005DEEBA /* StorageService.swift */; };
+		FFBDFC791F169244005DEEBA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC781F169244005DEEBA /* PostService.swift */; };
+		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
+		FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */; };
+		FFBDFC7F1F169819005DEEBA /*  StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */; };
 		FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */; };
 		FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C91F15248900FBB8AF /* UserService.swift */; };
 		FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CB1F15444300FBB8AF /* Constants.swift */; };
@@ -30,6 +35,11 @@
 		4D22FD7C4D26589B74440C34 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		990F63A39AA4CE61DEED5954 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFBDFC761F16914E005DEEBA /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		FFBDFC781F169244005DEEBA /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
+		FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = " StorageReference+Post.swift"; path = "../Services/ StorageReference+Post.swift"; sourceTree = "<group>"; };
 		FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		FFC233C91F15248900FBB8AF /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FFC233CB1F15444300FBB8AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				FFC233C91F15248900FBB8AF /* UserService.swift */,
+				FFBDFC761F16914E005DEEBA /* StorageService.swift */,
+				FFBDFC781F169244005DEEBA /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -90,7 +102,9 @@
 		FFC233CD1F155BC900FBB8AF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */,
 				FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */,
+				FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				FFDC64851F150C3E00C7705C /* User.swift */,
+				FFBDFC7A1F169420005DEEBA /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,14 +318,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDC64861F150C3E00C7705C /* User.swift in Sources */,
+				FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */,
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
 				FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
+				FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */,
+				FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */,
 				FFC233D11F1658E700FBB8AF /* HomeViewController.swift in Sources */,
 				FFC233D81F16741300FBB8AF /* MGPhotoHelper.swift in Sources */,
 				FFC233CF1F155BDF00FBB8AF /* Storyboard+Utility.swift in Sources */,
 				FFC233D31F1658F900FBB8AF /* FindFriendsViewController.swift in Sources */,
 				FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */,
+				FFBDFC7F1F169819005DEEBA /*  StorageReference+Post.swift in Sources */,
+				FFBDFC791F169244005DEEBA /* PostService.swift in Sources */,
 				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
 				FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */,
 			);
