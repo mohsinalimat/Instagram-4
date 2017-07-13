@@ -6,10 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Makestagram-->
         <scene sceneID="bl5-gz-ctM">
             <objects>
                 <viewController id="9WC-Yt-lc0" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,8 +27,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostHeaderCell" rowHeight="54" id="II5-BN-RiG" customClass="PostHeaderCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="II5-BN-RiG" id="W40-Bv-fWM">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lId-m5-RWO">
+                                                    <rect key="frame" x="15" y="0.0" width="81" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKC-Oe-ttk">
+                                                    <rect key="frame" x="328" y="3" width="47" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="btn_options_black"/>
+                                                    <connections>
+                                                        <action selector="optionsButtonTapped:" destination="II5-BN-RiG" eventType="touchUpInside" id="wPY-pL-DvQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="usernameLabel" destination="lId-m5-RWO" id="EhC-rW-X1j"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" rowHeight="375" id="ttg-CF-4Ma" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="375"/>
+                                        <rect key="frame" x="0.0" y="82" width="375" height="375"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ttg-CF-4Ma" id="n8b-Uc-6oj">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
@@ -47,6 +77,75 @@
                                             <outlet property="postImageView" destination="kVx-Mp-dZ3" id="JDw-7L-J6v"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostActionCell" rowHeight="46" id="dDO-8v-J04" customClass="PostActionCell" customModule="Makestagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="457" width="375" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dDO-8v-J04" id="Qcb-zH-RFB" customClass="PostActionCell" customModule="Makestagram" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF0-tS-E6y">
+                                                    <rect key="frame" x="2" y="0.0" width="53" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="aF0-tS-E6y" secondAttribute="height" multiplier="7:6" id="AOZ-07-9YQ"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="btn_heart_black_outline"/>
+                                                    <connections>
+                                                        <action selector="likeButton:" destination="dDO-8v-J04" eventType="touchUpInside" id="ftx-BT-Bbb"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltt-A7-Xvn">
+                                                    <rect key="frame" x="51" y="13" width="51" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="51" id="dSF-Lc-kKX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 MINUTES AGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TL1-Tc-AXr">
+                                                    <rect key="frame" x="267" y="0.0" width="93" height="46"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbW-aJ-7u0">
+                                                    <rect key="frame" x="69" y="38" width="236" height="7"/>
+                                                    <color key="backgroundColor" red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aF0-tS-E6y" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="2z3-CQ-hJ9"/>
+                                                <constraint firstItem="lbW-aJ-7u0" firstAttribute="top" secondItem="Ltt-A7-Xvn" secondAttribute="bottom" constant="4" id="4nd-jO-mh4"/>
+                                                <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="79x-2V-2OA"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="TL1-Tc-AXr" secondAttribute="trailing" constant="7" id="81h-Dd-kMo"/>
+                                                <constraint firstAttribute="bottom" secondItem="lbW-aJ-7u0" secondAttribute="bottom" id="FzJ-dE-yvw"/>
+                                                <constraint firstItem="aF0-tS-E6y" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="Kwr-rM-XRG"/>
+                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="top" secondItem="aF0-tS-E6y" secondAttribute="top" id="RUh-V8-FdW"/>
+                                                <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="SPn-Nd-Bi2"/>
+                                                <constraint firstItem="Ltt-A7-Xvn" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="topMargin" constant="5" id="STo-mr-CLp"/>
+                                                <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="Xoh-Uy-Q0u"/>
+                                                <constraint firstItem="lbW-aJ-7u0" firstAttribute="centerX" secondItem="Qcb-zH-RFB" secondAttribute="centerX" id="cPd-8n-rXy"/>
+                                                <constraint firstItem="Ltt-A7-Xvn" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leadingMargin" constant="43" id="dbG-lA-fVt"/>
+                                                <constraint firstItem="Ltt-A7-Xvn" firstAttribute="centerY" secondItem="aF0-tS-E6y" secondAttribute="centerY" id="eon-Os-uFu"/>
+                                                <constraint firstItem="lbW-aJ-7u0" firstAttribute="leading" secondItem="aF0-tS-E6y" secondAttribute="trailing" constant="14" id="hDM-di-4lC"/>
+                                                <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="mAU-m2-NSW"/>
+                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="pzj-Kp-nD0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likesCount" destination="Ltt-A7-Xvn" id="fS3-Oz-f8k"/>
+                                            <outlet property="timeStamp" destination="TL1-Tc-AXr" id="77x-xE-eVN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VTH-JS-pKv">
+                                        <rect key="frame" x="0.0" y="503" width="375" height="108"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VTH-JS-pKv" id="sF5-h5-MbB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="9WC-Yt-lc0" id="voP-3N-vi8"/>
@@ -62,7 +161,7 @@
                             <constraint firstItem="5j3-Bg-lQF" firstAttribute="top" secondItem="Hny-Hj-kCV" secondAttribute="top" id="UVB-nM-hVV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ubs-G4-M4y"/>
+                    <navigationItem key="navigationItem" title="Makestagram" id="Ubs-G4-M4y"/>
                     <connections>
                         <outlet property="tableView" destination="5j3-Bg-lQF" id="Svz-Le-wXS"/>
                     </connections>
@@ -95,6 +194,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
 </document>
