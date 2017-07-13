@@ -13,6 +13,7 @@
 		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
 		FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */; };
 		FFBDFC7F1F169819005DEEBA /*  StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */; };
+		FFBDFC811F16AC39005DEEBA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFBDFC801F16AC39005DEEBA /* Home.storyboard */; };
 		FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */; };
 		FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233C91F15248900FBB8AF /* UserService.swift */; };
 		FFC233CC1F15444300FBB8AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC233CB1F15444300FBB8AF /* Constants.swift */; };
@@ -40,6 +41,7 @@
 		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = " StorageReference+Post.swift"; path = "../Services/ StorageReference+Post.swift"; sourceTree = "<group>"; };
+		FFBDFC801F16AC39005DEEBA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		FFC233C61F15172A00FBB8AF /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		FFC233C91F15248900FBB8AF /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FFC233CB1F15444300FBB8AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				FFDC64781F13C9F500C7705C /* Login.storyboard */,
 				FFDC64691F13C5A100C7705C /* Main.storyboard */,
+				FFBDFC801F16AC39005DEEBA /* Home.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				FFDC646E1F13C5A100C7705C /* Main.storyboard in Resources */,
 				FFDC645A1F13C1F700C7705C /* Assets.xcassets in Resources */,
 				FFDC64831F14073E00C7705C /* GoogleService-Info.plist in Resources */,
+				FFBDFC811F16AC39005DEEBA /* Home.storyboard in Resources */,
 				FFDC64791F13C9F500C7705C /* Login.storyboard in Resources */,
 				FFDC646D1F13C5A100C7705C /* LaunchScreen.storyboard in Resources */,
 			);
