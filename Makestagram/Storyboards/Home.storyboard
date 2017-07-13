@@ -118,10 +118,11 @@
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="2z3-CQ-hJ9"/>
                                                 <constraint firstItem="lbW-aJ-7u0" firstAttribute="top" secondItem="Ltt-A7-Xvn" secondAttribute="bottom" constant="4" id="4nd-jO-mh4"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="79x-2V-2OA"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="TL1-Tc-AXr" secondAttribute="trailing" constant="7" id="81h-Dd-kMo"/>
                                                 <constraint firstAttribute="bottom" secondItem="lbW-aJ-7u0" secondAttribute="bottom" id="FzJ-dE-yvw"/>
+                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="IdP-Ov-VQm"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="Kwr-rM-XRG"/>
-                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="top" secondItem="aF0-tS-E6y" secondAttribute="top" id="RUh-V8-FdW"/>
+                                                <constraint firstAttribute="bottom" secondItem="TL1-Tc-AXr" secondAttribute="bottom" id="PzZ-TF-goM"/>
+                                                <constraint firstAttribute="trailing" secondItem="TL1-Tc-AXr" secondAttribute="trailing" constant="15" id="Rk3-eR-exf"/>
                                                 <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="SPn-Nd-Bi2"/>
                                                 <constraint firstItem="Ltt-A7-Xvn" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="topMargin" constant="5" id="STo-mr-CLp"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="Xoh-Uy-Q0u"/>
@@ -130,7 +131,6 @@
                                                 <constraint firstItem="Ltt-A7-Xvn" firstAttribute="centerY" secondItem="aF0-tS-E6y" secondAttribute="centerY" id="eon-Os-uFu"/>
                                                 <constraint firstItem="lbW-aJ-7u0" firstAttribute="leading" secondItem="aF0-tS-E6y" secondAttribute="trailing" constant="14" id="hDM-di-4lC"/>
                                                 <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="mAU-m2-NSW"/>
-                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="pzj-Kp-nD0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

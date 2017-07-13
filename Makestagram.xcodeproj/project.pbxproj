@@ -11,6 +11,7 @@
 		FF4C32511F17B4E80065E3CB /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32501F17B4E80065E3CB /* PostImageCell.swift */; };
 		FF4C32531F17BB7D0065E3CB /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32521F17BB7D0065E3CB /* PostHeaderCell.swift */; };
 		FF4C32551F17C28D0065E3CB /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32541F17C28D0065E3CB /* PostActionCell.swift */; };
+		FF4C32571F17E4AD0065E3CB /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32561F17E4AD0065E3CB /* LikeService.swift */; };
 		FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC761F16914E005DEEBA /* StorageService.swift */; };
 		FFBDFC791F169244005DEEBA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC781F169244005DEEBA /* PostService.swift */; };
 		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
@@ -42,6 +43,7 @@
 		FF4C32501F17B4E80065E3CB /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		FF4C32521F17BB7D0065E3CB /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		FF4C32541F17C28D0065E3CB /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
+		FF4C32561F17E4AD0065E3CB /* LikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeService.swift; sourceTree = "<group>"; };
 		FFBDFC761F16914E005DEEBA /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FFBDFC781F169244005DEEBA /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				FFC233C91F15248900FBB8AF /* UserService.swift */,
 				FFBDFC761F16914E005DEEBA /* StorageService.swift */,
 				FFBDFC781F169244005DEEBA /* PostService.swift */,
+				FF4C32561F17E4AD0065E3CB /* LikeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
 				FF4C32551F17C28D0065E3CB /* PostActionCell.swift in Sources */,
+				FF4C32571F17E4AD0065E3CB /* LikeService.swift in Sources */,
 				FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */,
 				FF4C32511F17B4E80065E3CB /* PostImageCell.swift in Sources */,
 				FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */,
