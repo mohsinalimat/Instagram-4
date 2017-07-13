@@ -76,7 +76,7 @@ extension HomeViewController: UITableViewDataSource {
             
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostActionCell") as! PostActionCell
-            cell.timeStamp.text = timestampFormatter.string(from: post.creationDate)
+            cell.likesCount.text = "\(post.likeCount) likes"
             
             return cell
             

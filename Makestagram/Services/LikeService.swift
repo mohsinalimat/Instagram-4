@@ -44,6 +44,27 @@ struct LikeService {
             })
         }
     }
+    
+//    First we make sure that the post has a key.
+//    Then we build a relative path to the location of where we store the current user's like data for a specific post, if a like were to exist.
+//    Last we use a special query that checks whether a value exists at the location that we're reading from. If there is, we know that the current user has liked the post. Otherwise, we know that the user hasn't.
+    
+    static func isPostLiked(_ post: Post, byCurrentUserWithCompletion completion: @escaping (Bool) -> Void) {
+        guard let postKey = post.key else {
+            assertionFailure("Error: post must have key.")
+            return completion(false)
+        }
+        
+        let likesRef = Database.database().reference().child("postLikes").child(postKey)
+        likesRef.queryEqual(toValue: nil, childKey: User.current.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? [String : Bool] {
+                completion(true)
+            } else {
+                completion(false)
+            }
+        })
+    }
 }
+
 
 
