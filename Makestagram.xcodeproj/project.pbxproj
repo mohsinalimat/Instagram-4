@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03D1642DBD3EEB6539A65F09 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */; };
+		FF4C32511F17B4E80065E3CB /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32501F17B4E80065E3CB /* PostImageCell.swift */; };
 		FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC761F16914E005DEEBA /* StorageService.swift */; };
 		FFBDFC791F169244005DEEBA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC781F169244005DEEBA /* PostService.swift */; };
 		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
@@ -36,6 +37,7 @@
 		4D22FD7C4D26589B74440C34 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		990F63A39AA4CE61DEED5954 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		BDC67B8890F1ECE54C488994 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4C32501F17B4E80065E3CB /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		FFBDFC761F16914E005DEEBA /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FFBDFC781F169244005DEEBA /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF4C324D1F17B4990065E3CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF4C32501F17B4E80065E3CB /* PostImageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FFC233C81F15245C00FBB8AF /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		FFDC64511F13C1F700C7705C /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
+				FF4C324D1F17B4990065E3CB /* Views */,
 				FFC233CD1F155BC900FBB8AF /* Extensions */,
 				FFC233C81F15245C00FBB8AF /* Services */,
 				FFDC64751F13C76800C7705C /* Supporting Files */,
@@ -327,6 +338,7 @@
 				FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
 				FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */,
+				FF4C32511F17B4E80065E3CB /* PostImageCell.swift in Sources */,
 				FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */,
 				FFC233D11F1658E700FBB8AF /* HomeViewController.swift in Sources */,
 				FFC233D81F16741300FBB8AF /* MGPhotoHelper.swift in Sources */,
