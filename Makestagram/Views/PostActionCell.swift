@@ -20,6 +20,7 @@ class PostActionCell: UITableViewCell {
     
     static let height: CGFloat = 46
     
+    @IBOutlet weak var likeButton: UIButton!
     @IBOutlet weak var likesCount: UILabel!
     @IBOutlet weak var timeStamp: UILabel!
     
@@ -27,13 +28,9 @@ class PostActionCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    @IBAction func likeButton(_ sender: UIButton) {
-        
-    }
-    
     // MARK: - IBActions
-    @IBAction func likeButtonTapped(_ sender: UIButton) {
+    
+    @IBAction func likeClicked(_ sender: UIButton) {
         delegate?.didTapLikeButton(sender, on: self)
     }
-    
 }

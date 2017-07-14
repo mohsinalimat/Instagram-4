@@ -90,6 +90,7 @@
                                                         <constraint firstAttribute="width" secondItem="aF0-tS-E6y" secondAttribute="height" multiplier="7:6" id="AOZ-07-9YQ"/>
                                                     </constraints>
                                                     <state key="normal" title="Button" image="btn_heart_black_outline"/>
+                                                    <state key="selected" image="btn_heart_red_solid"/>
                                                     <connections>
                                                         <action selector="likeButton:" destination="dDO-8v-J04" eventType="touchUpInside" id="ftx-BT-Bbb"/>
                                                     </connections>
@@ -119,18 +120,18 @@
                                                 <constraint firstItem="lbW-aJ-7u0" firstAttribute="top" secondItem="Ltt-A7-Xvn" secondAttribute="bottom" constant="4" id="4nd-jO-mh4"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="79x-2V-2OA"/>
                                                 <constraint firstAttribute="bottom" secondItem="lbW-aJ-7u0" secondAttribute="bottom" id="FzJ-dE-yvw"/>
-                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="IdP-Ov-VQm"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="Kwr-rM-XRG"/>
-                                                <constraint firstAttribute="bottom" secondItem="TL1-Tc-AXr" secondAttribute="bottom" id="PzZ-TF-goM"/>
-                                                <constraint firstAttribute="trailing" secondItem="TL1-Tc-AXr" secondAttribute="trailing" constant="15" id="Rk3-eR-exf"/>
                                                 <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="SPn-Nd-Bi2"/>
                                                 <constraint firstItem="Ltt-A7-Xvn" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="topMargin" constant="5" id="STo-mr-CLp"/>
+                                                <constraint firstAttribute="bottom" secondItem="TL1-Tc-AXr" secondAttribute="bottom" id="UKM-XC-ruf"/>
                                                 <constraint firstItem="aF0-tS-E6y" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leading" constant="2" id="Xoh-Uy-Q0u"/>
+                                                <constraint firstItem="TL1-Tc-AXr" firstAttribute="top" secondItem="Qcb-zH-RFB" secondAttribute="top" id="br8-Xi-R4a"/>
                                                 <constraint firstItem="lbW-aJ-7u0" firstAttribute="centerX" secondItem="Qcb-zH-RFB" secondAttribute="centerX" id="cPd-8n-rXy"/>
                                                 <constraint firstItem="Ltt-A7-Xvn" firstAttribute="leading" secondItem="Qcb-zH-RFB" secondAttribute="leadingMargin" constant="43" id="dbG-lA-fVt"/>
                                                 <constraint firstItem="Ltt-A7-Xvn" firstAttribute="centerY" secondItem="aF0-tS-E6y" secondAttribute="centerY" id="eon-Os-uFu"/>
                                                 <constraint firstItem="lbW-aJ-7u0" firstAttribute="leading" secondItem="aF0-tS-E6y" secondAttribute="trailing" constant="14" id="hDM-di-4lC"/>
                                                 <constraint firstAttribute="bottom" secondItem="aF0-tS-E6y" secondAttribute="bottom" id="mAU-m2-NSW"/>
+                                                <constraint firstAttribute="trailing" secondItem="TL1-Tc-AXr" secondAttribute="trailing" constant="15" id="qTc-W0-aWa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -195,6 +196,7 @@
     </scenes>
     <resources>
         <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
         <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
