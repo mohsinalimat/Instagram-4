@@ -10,7 +10,8 @@ import UIKit
 import Kingfisher // url to picture ez
 
 class HomeViewController: UIViewController {
- 
+    
+    let refreshControl = UIRefreshControl()
     
     // MARK: - Properties
     
@@ -32,21 +33,32 @@ class HomeViewController: UIViewController {
         tableView.tableFooterView = UIView()
         // remove separators from cells
         tableView.separatorStyle = .none
+        
+        // add pull to refresh
+        refreshControl.addTarget(self, action: #selector(reloadTimeline), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
 
     //MARK: - VC Lifecycle
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureTableView()
-        
-        UserService.posts(for: User.current) { (posts) in
+        reloadTimeline()
+    }
+    func reloadTimeline() {
+        UserService.timeline { (posts) in
             self.posts = posts
+            
+            if self.refreshControl.isRefreshing {
+                self.refreshControl.endRefreshing()
+            }
+            
             self.tableView.reloadData()
         }
     }
-    
 }
 
 // MARK: - UITableViewDataSource
@@ -63,7 +75,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
-            cell.usernameLabel.text = User.current.username
+            cell.usernameLabel.text = post.poster.username
             
             return cell
             
