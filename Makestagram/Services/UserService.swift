@@ -75,4 +75,41 @@ struct UserService {
             })
         })
     }
+    
+    static func usersExcludingCurrentUser(completion: @escaping ([User]) -> Void) {
+        let currentUser = User.current
+        // 1 Create a DatabaseReference to read all users from the database.
+        let ref = Database.database().reference().child("users")
+        
+        // 2 Read the users node from the database.
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
+                else { return completion([]) }
+            
+            // 3 Take the snapshot and perform a few transformations. First, we convert all of the child DataSnapshot into User using our failable initializer. Next we filter out the current user object from the User array.
+            let users =
+                snapshot
+                    .flatMap(User.init)
+                    .filter { $0.uid != currentUser.uid }
+            
+            // 4 Create a new DispatchGroup so that we can be notified when all asynchronous tasks are finished executing. We'll use the notify(queue:) method on DispatchGroup as a completion handler for when all follow data has been read.
+            let dispatchGroup = DispatchGroup()
+            users.forEach { (user) in
+                dispatchGroup.enter()
+                
+                // 5 Make a request for each individual user to determine if the user is being followed by the current user.
+                FollowService.isUserFollowed(user) { (isFollowed) in
+                    user.isFollowed = isFollowed
+                    dispatchGroup.leave()
+                }
+            }
+            
+            // 6 Run the completion block after all follow relationship data has returned.
+            dispatchGroup.notify(queue: .main, execute: {
+                completion(users)
+            })
+        })
+    }
 }
+
+

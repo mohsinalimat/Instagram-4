@@ -92,7 +92,7 @@
                                                     <state key="normal" title="Button" image="btn_heart_black_outline"/>
                                                     <state key="selected" image="btn_heart_red_solid"/>
                                                     <connections>
-                                                        <action selector="likeButton:" destination="dDO-8v-J04" eventType="touchUpInside" id="ftx-BT-Bbb"/>
+                                                        <action selector="likeClicked:" destination="dDO-8v-J04" eventType="touchUpInside" id="Y2F-I6-UzH"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltt-A7-Xvn">
@@ -135,6 +135,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeButton" destination="aF0-tS-E6y" id="ISX-Rb-0wC"/>
                                             <outlet property="likesCount" destination="Ltt-A7-Xvn" id="fS3-Oz-f8k"/>
                                             <outlet property="timeStamp" destination="TL1-Tc-AXr" id="77x-xE-eVN"/>
                                         </connections>
