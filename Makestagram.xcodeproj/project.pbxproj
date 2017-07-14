@@ -15,6 +15,7 @@
 		FF4C32591F1903400065E3CB /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32581F1903400065E3CB /* FollowService.swift */; };
 		FF4C325B1F1907950065E3CB /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4C325A1F1907950065E3CB /* FindFriends.storyboard */; };
 		FF4C325D1F1909620065E3CB /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C325C1F1909620065E3CB /* FindFriendsCell.swift */; };
+		FF4C325F1F1930BE0065E3CB /*  DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */; };
 		FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC761F16914E005DEEBA /* StorageService.swift */; };
 		FFBDFC791F169244005DEEBA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC781F169244005DEEBA /* PostService.swift */; };
 		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
@@ -50,6 +51,7 @@
 		FF4C32581F1903400065E3CB /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
 		FF4C325A1F1907950065E3CB /* FindFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FindFriends.storyboard; path = Storyboards/FindFriends.storyboard; sourceTree = "<group>"; };
 		FF4C325C1F1909620065E3CB /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " DatabaseReference+Location.swift"; sourceTree = "<group>"; };
 		FFBDFC761F16914E005DEEBA /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FFBDFC781F169244005DEEBA /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				FFBDFC7E1F169819005DEEBA /*  StorageReference+Post.swift */,
 				FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */,
 				FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */,
+				FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				FFBDFC7F1F169819005DEEBA /*  StorageReference+Post.swift in Sources */,
 				FFBDFC791F169244005DEEBA /* PostService.swift in Sources */,
 				FFC233C71F15172A00FBB8AF /* CreateUsernameViewController.swift in Sources */,
+				FF4C325F1F1930BE0065E3CB /*  DatabaseReference+Location.swift in Sources */,
 				FF4C32531F17BB7D0065E3CB /* PostHeaderCell.swift in Sources */,
 				FFDC64531F13C1F700C7705C /* AppDelegate.swift in Sources */,
 			);
