@@ -9,15 +9,13 @@
 import UIKit
 import FirebaseDatabase.FIRDataSnapshot
 
-class Post {
+class Post: MGKeyed {
     // properties and initializers
     var key: String?
     let imageURL: String
     let imageHeight: CGFloat
     let creationDate: Date
     var isLiked = false
-
-    
     var dictValue: [String : Any] {
         let createdAgo = creationDate.timeIntervalSince1970
         let userDict = ["uid" : poster.uid,
@@ -29,6 +27,8 @@ class Post {
                 "like_count" : likeCount,
                 "poster" : userDict]
     }
+    
+
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let imageURL = dict["image_url"] as? String,

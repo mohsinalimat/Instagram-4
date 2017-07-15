@@ -124,11 +124,15 @@ struct UserService {
         })
     }
     
-    static func timeline(completion: @escaping ([Post]) -> Void) {
+    static func timeline(pageSize: UInt, lastPostKey: String? = nil, completion: @escaping ([Post]) -> Void) {
         let currentUser = User.current
         
-        let timelineRef = Database.database().reference().child("timeline").child(currentUser.uid)
-        timelineRef.observeSingleEvent(of: .value, with: { (snapshot) in
+        let timelineRef = DatabaseReference.toLocation(.timeline(uid: currentUser.uid))
+        var query = timelineRef.queryOrderedByKey().queryLimited(toLast: pageSize)
+        if let lastPostKey = lastPostKey {
+            query = query.queryEnding(atValue: lastPostKey)
+        }
+        query.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let snapshot = snapshot.children.allObjects as? [DataSnapshot]
                 else { return completion([]) }
             
@@ -138,7 +142,7 @@ struct UserService {
             
             for postSnap in snapshot {
                 guard let postDict = postSnap.value as? [String : Any],
-                    let posterUID = postDict["poster_uid"] as? String
+                    let posterUID = postDict[Constants.FirDB.posterUID] as? String
                     else { continue }
                 
                 dispatchGroup.enter()
@@ -156,7 +160,7 @@ struct UserService {
                 completion(posts.reversed())
             })
         })
-    }
+}
 }
 
 

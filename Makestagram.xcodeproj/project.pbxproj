@@ -16,6 +16,8 @@
 		FF4C325B1F1907950065E3CB /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4C325A1F1907950065E3CB /* FindFriends.storyboard */; };
 		FF4C325D1F1909620065E3CB /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C325C1F1909620065E3CB /* FindFriendsCell.swift */; };
 		FF4C325F1F1930BE0065E3CB /*  DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */; };
+		FF4C32611F193BA00065E3CB /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C32601F193B9F0065E3CB /* UITableView+Utility.swift */; };
+		FF4C329F1F1AA4340065E3CB /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4C329E1F1AA4340065E3CB /* MGPaginationHelper.swift */; };
 		FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC761F16914E005DEEBA /* StorageService.swift */; };
 		FFBDFC791F169244005DEEBA /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC781F169244005DEEBA /* PostService.swift */; };
 		FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBDFC7A1F169420005DEEBA /* Post.swift */; };
@@ -52,6 +54,8 @@
 		FF4C325A1F1907950065E3CB /* FindFriends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FindFriends.storyboard; path = Storyboards/FindFriends.storyboard; sourceTree = "<group>"; };
 		FF4C325C1F1909620065E3CB /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
 		FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " DatabaseReference+Location.swift"; sourceTree = "<group>"; };
+		FF4C32601F193B9F0065E3CB /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		FF4C329E1F1AA4340065E3CB /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPaginationHelper.swift; sourceTree = "<group>"; };
 		FFBDFC761F16914E005DEEBA /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		FFBDFC781F169244005DEEBA /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		FFBDFC7A1F169420005DEEBA /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				FFC233CE1F155BDF00FBB8AF /* Storyboard+Utility.swift */,
 				FFBDFC7C1F1696F9005DEEBA /* UIImage+Size.swift */,
 				FF4C325E1F1930BE0065E3CB /*  DatabaseReference+Location.swift */,
+				FF4C32601F193B9F0065E3CB /* UITableView+Utility.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC233D71F16741300FBB8AF /* MGPhotoHelper.swift */,
+				FF4C329E1F1AA4340065E3CB /* MGPaginationHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -358,12 +364,14 @@
 				FFDC64861F150C3E00C7705C /* User.swift in Sources */,
 				FFBDFC771F16914E005DEEBA /* StorageService.swift in Sources */,
 				FFDC647D1F13CB4400C7705C /* LoginViewController.swift in Sources */,
+				FF4C32611F193BA00065E3CB /* UITableView+Utility.swift in Sources */,
 				FFC233D51F1670C900FBB8AF /* MainTabBarController.swift in Sources */,
 				FFC233CA1F15248A00FBB8AF /* UserService.swift in Sources */,
 				FF4C32551F17C28D0065E3CB /* PostActionCell.swift in Sources */,
 				FF4C32571F17E4AD0065E3CB /* LikeService.swift in Sources */,
 				FFBDFC7B1F169420005DEEBA /* Post.swift in Sources */,
 				FF4C32511F17B4E80065E3CB /* PostImageCell.swift in Sources */,
+				FF4C329F1F1AA4340065E3CB /* MGPaginationHelper.swift in Sources */,
 				FF4C325D1F1909620065E3CB /* FindFriendsCell.swift in Sources */,
 				FFBDFC7D1F1696F9005DEEBA /* UIImage+Size.swift in Sources */,
 				FFC233D11F1658E700FBB8AF /* HomeViewController.swift in Sources */,
